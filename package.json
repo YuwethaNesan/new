@@ -1,7 +1,7 @@
 {
-  "name": "shopen",
+  "name": "yuthiesaari",
   "version": "1.0.0",
-  "description": "MERN shopping Cart",
+  "description": "yuthiesaari website",
   "main": "server.js",
   "engines": {
     "node": "12.18.3",
@@ -16,7 +16,7 @@
     "data:destroy": "node backend/seeder -d",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
-  "author": "Guru Kishore",
+  "author": "Yuwetha Nesan",
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
