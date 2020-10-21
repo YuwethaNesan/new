@@ -12,9 +12,9 @@ const Meta = ({ title, description, keywords }) => {
 };
 
 Meta.defaultProps = {
-  title: "Welcome To Shopen",
-  description: "We sell the best products for cheap",
-  keywords: "electronics, buy electronics, cheap electroincs",
+  title: "Yuthies Aari",
+  description: "We sell the best products",
+  keywords: "Match our designs with your desres",
 };
 
 export default Meta;

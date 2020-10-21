@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Form, Button, Row, Col } from "react-bootstrap";
+import { Form, Button, Row, Col, Image, Alert } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import FormContainer from "../components/FormContainer";
 import { saveShippingAddress } from "./../actions/cartAction";
 import CheckoutSteps from "./../components/CheckoutSteps";
+import Address from "../images/address.png";
+import '../style/address.css'
 
 function ShippingScreen({ history }) {
   const cart = useSelector((state) => state.cart);
@@ -25,9 +27,28 @@ function ShippingScreen({ history }) {
   console.log(shippingAddress);
 
   return (
-    <FormContainer>
+   <div className='col-12'>
+     <br />
       <CheckoutSteps step1 step2 />
-      <h1>Shipping</h1>
+     <br />
+     <br />
+
+<div className='address'>
+      <Row className='addalert'>
+      <Col className='col-6'>
+      <Alert className='alertadd' variant="success">
+  <Alert.Heading>Hey!, Nice to see you</Alert.Heading>
+  <p>We have a good news.We will come & collect your material at your place.</p>
+  
+  <p>
+    Please provide your address for material collecting.
+  </p>
+</Alert>
+      <Image className='addressimg' src={Address} alt='website logo' />
+      
+      </Col>
+      <Col className='add col-6'>
+        <h3>Address</h3>
       <Form onSubmit={submitHandler}>
         <Form.Group controlId="address">
           <Form.Label>Address</Form.Label>
@@ -73,11 +94,14 @@ function ShippingScreen({ history }) {
           ></Form.Control>
         </Form.Group>
 
-        <Button type="submit" variant="primary">
+        <Button type="submit" className='btn-primary'>
           Continue
         </Button>
       </Form>
-    </FormContainer>
+      </Col>
+      </Row>
+   </div>
+   </div>
   );
 }
 

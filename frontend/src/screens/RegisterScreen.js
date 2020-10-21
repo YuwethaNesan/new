@@ -6,6 +6,7 @@ import Message from "../components/Message";
 import Loader from "../components/Loader";
 import FormContainer from "../components/FormContainer";
 import { Register } from "../actions/usersAction";
+import '../style/form.css'
 
 const RegisterScreen = ({ location, history }) => {
   const [name, setName] = useState("");
@@ -20,6 +21,8 @@ const RegisterScreen = ({ location, history }) => {
   const { loading, error, userInfo } = userRegister;
 
   const redirect = location.search ? location.search.split("=")[1] : "/";
+
+  
 
   useEffect(() => {
     if (userInfo) {
@@ -37,70 +40,94 @@ const RegisterScreen = ({ location, history }) => {
   };
 
   return (
+    <div className='myformreg'>
     <FormContainer>
-      <h1>Sign Up</h1>
+      <Form className='myform  sub' onSubmit={submitHandler}>
+
+      <h2>Sign Up</h2>
+      <br />
       {message && <Message variant="danger">{message}</Message>}
       {error && (
         <Message variant="danger">
-          Fill all the field in Form or Check if you have already have account
+          <i className="fa fa-exclamation-triangle"></i> Fill all the field in Form or Check if you have already have account
         </Message>
       )}
       {loading && <Loader />}
-      <Form onSubmit={submitHandler}>
-        <Form.Group controlId="name">
-          <Form.Label>Name</Form.Label>
+      
+        <Form.Group aria-required controlId="name">
+          {/* <Form.Label className="formlabel"></Form.Label> */}
+          <div className="input-container">
+    <i className="fa fa-user icon"></i>
           <Form.Control
+            className="formcontrol"
             type="name"
             placeholder="Enter name"
             value={name}
+            required
             onChange={(e) => setName(e.target.value)}
-          ></Form.Control>
-        </Form.Group>
+          ></Form.Control></div>
+        </Form.Group> 
 
         <Form.Group controlId="email">
-          <Form.Label>Email Address</Form.Label>
+          {/* <Form.Label></Form.Label> */}
+          <div className="input-container">
+    <i className="fa fa-envelope icon"></i>
           <Form.Control
+          className="formcontrol"
             type="email"
             placeholder="Enter email"
+            required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-          ></Form.Control>
+          ></Form.Control></div>
         </Form.Group>
 
-        <Form.Group controlId="password">
-          <Form.Label>Password</Form.Label>
+        <Form.Group className="form1" controlId="password">
+          {/* <Form.Label></Form.Label> */}
+          <div className="input-container">
+    <i className="fa fa-key icon"></i>
           <Form.Control
+          className="formcontrol"
             type="password"
             placeholder="Enter password"
             value={password}
+            required
+            minLength='8'
             onChange={(e) => setPassword(e.target.value)}
-          ></Form.Control>
+          ></Form.Control></div>
         </Form.Group>
 
         <Form.Group controlId="confirmPassword">
-          <Form.Label>Confirm Password</Form.Label>
+          {/* <Form.Label></Form.Label> */}
+          <div className="input-container">
+    <i className="fa fa-key icon"></i>
           <Form.Control
+          className="formcontrol"
             type="password"
             placeholder="Confirm password"
+            required
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
-          ></Form.Control>
+          ></Form.Control></div>
         </Form.Group>
 
         <Form.Group controlId="address">
-          <Form.Label>Enter the Address</Form.Label>
+          {/* <Form.Label></Form.Label> */}
+          <div className="input-container">
+    <i className="fa fa-home icon"></i>
           <Form.Control
+          className="formcontrol"
             type="address"
             placeholder="Enter the address"
             value={address}
             onChange={(e) => setaddress(e.target.value)}
-          ></Form.Control>
+          ></Form.Control></div>
         </Form.Group>
 
-        <Button type="submit" variant="primary">
+        <Button className='mybtnreg' type="submit" variant="primary">
           Register
         </Button>
-      </Form>
+     
 
       <Row className="py-3">
         <Col>
@@ -110,7 +137,9 @@ const RegisterScreen = ({ location, history }) => {
           </Link>
         </Col>
       </Row>
+      </Form>
     </FormContainer>
+    </div>
   );
 };
 

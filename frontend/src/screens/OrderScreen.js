@@ -9,6 +9,7 @@ import {
   payOrder,
   deliverOrder,
 } from "../actions/orderActions";
+import StripeCheckout from 'react-stripe-checkout';
 import axios from "axios";
 import {
   ORDER_PAY_RESET,
@@ -79,19 +80,33 @@ const OrderScreen = ({ match, history }) => {
   const deliverHandler = () => {
     dispatch(deliverOrder(order));
   };
+  function Ontoken(token) {
+    let totalamount = order.totalPrice 
+
+    const data={token,totalamount}
+    axios.post('http://localhost:9000/pay/payment',data).then( res =>{
+        console.log(res) 
+        alert('Payment Successful')
+    }
+       
+    ).catch (err => console.log(err))
+}
 
   return loading ? (
     <Loader />
   ) : error ? (
     <Message variant="danger">{error}</Message>
   ) : (
-    <>
-      <h1>Order {order._id}</h1>
+    <div  className='orderid'>
+      <br />
+      <h4>Order {order._id}</h4>
+      <br />
+
       <Row>
         <Col md={8}>
-          <ListGroup variant="flush">
+          <ListGroup>
             <ListGroup.Item>
-              <h2>Shipping</h2>
+              <h3>Material Collecting</h3>              
               <p>
                 <strong>Name: </strong> {order.user.name}
               </p>
@@ -115,7 +130,7 @@ const OrderScreen = ({ match, history }) => {
             </ListGroup.Item>
 
             <ListGroup.Item>
-              <h2>Payment Method</h2>
+              <h3>Payment Method</h3>
               <p>
                 <strong>Method: </strong>
                 {order.paymentMethod}
@@ -128,7 +143,7 @@ const OrderScreen = ({ match, history }) => {
             </ListGroup.Item>
 
             <ListGroup.Item>
-              <h2>Order Items</h2>
+              <h3>Order Items</h3>
               {order.orderItems.length === 0 ? (
                 <Message>Order is empty</Message>
               ) : (
@@ -150,7 +165,7 @@ const OrderScreen = ({ match, history }) => {
                           </Link>
                         </Col>
                         <Col md={4}>
-                          {item.qty} x ${item.price} = ${item.qty * item.price}
+                          {item.qty} x Rs{item.price} = Rs{item.qty * item.price}
                         </Col>
                       </Row>
                     </ListGroup.Item>
@@ -169,41 +184,52 @@ const OrderScreen = ({ match, history }) => {
               <ListGroup.Item>
                 <Row>
                   <Col>Items</Col>
-                  <Col>${order.itemsPrice}</Col>
+                  <Col>Rs{order.itemsPrice}</Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
                 <Row>
                   <Col>Shipping</Col>
-                  <Col>${order.shippingPrice}</Col>
+                  <Col>Rs{order.shippingPrice}</Col>
                 </Row>
               </ListGroup.Item>
-              <ListGroup.Item>
+              {/* <ListGroup.Item>
                 <Row>
                   <Col>Tax</Col>
-                  <Col>${order.taxPrice}</Col>
+                  <Col>Rs{order.taxPrice}</Col>
                 </Row>
-              </ListGroup.Item>
+              </ListGroup.Item> */}
               <ListGroup.Item>
                 <Row>
                   <Col>Total</Col>
-                  <Col>${order.totalPrice}</Col>
+                  <Col>Rs{order.totalPrice}</Col>
                 </Row>
               </ListGroup.Item>
+              <StripeCheckout
+                    stripeKey="pk_test_51HbW5xJnYK09rM9t8iYTd5LvwTOdyboIRqKC16qkMwDakmiyV70Xy4yD69jNmBLPuo6Pf4K2BHhaff84VBQvDnsb00lEFoiKY7"
+                    token={Ontoken}
+                    billingAddress
+                    onSuccess={successPaymentHandler}
+                    shippingAddress
+                    amount={order.totalPrice}
+                    name="Yuthies Aari"
+                   
+
+                    />
               {!order.isPaid && (
                 <ListGroup.Item>
-                  {loadingPay && <Loader />}
-                  {!sdkReady ? (
+                  {/* {loadingPay && <Loader />} */}
+                  {/* {!sdkReady ? (
                     <Loader />
-                  ) : (
+                  ) : ( */}
                     <PayPalButton
                       amount={order.totalPrice}
                       onSuccess={successPaymentHandler}
                     />
-                  )}
+                  {/* )} */}
                 </ListGroup.Item>
               )}
-              {loadingDeliver && <Loader />}
+             
               {userInfo &&
                 userInfo.isAdmin &&
                 order.isPaid &&
@@ -222,7 +248,7 @@ const OrderScreen = ({ match, history }) => {
           </Card>
         </Col>
       </Row>
-    </>
+    </div>
   );
 };
 

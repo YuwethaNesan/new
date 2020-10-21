@@ -26,13 +26,14 @@ const OrderListScreen = ({ history }) => {
 
   return (
     <>
+  <div className='cardbg'>
       <h1>Orders</h1>
       {loading ? (
         <Loader />
       ) : error ? (
         <Message variant="danger">{error}</Message>
       ) : (
-        <Table striped bordered hover responsive className="table-sm">
+        <Table id='customers'striped bordered hover responsive className="table-sm">
           <thead>
             <tr>
               <th>ID</th>
@@ -50,10 +51,10 @@ const OrderListScreen = ({ history }) => {
                 <td>{order._id}</td>
                 <td>{order.user && order.user.name}</td>
                 <td>{order.createdAt.substring(0, 10)}</td>
-                <td>${order.totalPrice}</td>
+                <td>Rs {order.totalPrice}</td>
                 <td>
                   {order.isPaid ? (
-                    order.paidAt.substring(0, 10)
+                   order.paidAt.substring(0, 10)
                   ) : (
                     <i className="fa fa-times" style={{ color: "red" }}></i>
                   )}
@@ -67,8 +68,8 @@ const OrderListScreen = ({ history }) => {
                 </td>
                 <td>
                   <LinkContainer to={`/order/${order._id}`}>
-                    <Button variant="light" className="btn-sm">
-                      Details
+                    <Button className="btn-sm">
+                    <i className="fa fa-info-circle"></i>
                     </Button>
                   </LinkContainer>
                 </td>
@@ -77,6 +78,7 @@ const OrderListScreen = ({ history }) => {
           </tbody>
         </Table>
       )}
+      </div>
     </>
   );
 };

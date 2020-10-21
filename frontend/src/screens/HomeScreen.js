@@ -29,15 +29,12 @@ function HomeScreen({ match }) {
 
   return (
     <>
-      <Meta />
-      {!keyword ? (
-        <ProductCarousel />
-      ) : (
+  
         <Link to="/" className="btn btn-light">
           Go Back
         </Link>
-      )}
-      <h2>Lastest Products</h2>
+     
+      <h2 className='key text-center'>{keyword}</h2>
       {loading ? (
         <Loader />
       ) : error ? (

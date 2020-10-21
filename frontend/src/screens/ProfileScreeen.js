@@ -56,9 +56,9 @@ const ProfileScreen = ({ location, history }) => {
   };
 
   return (
-    <Row>
-      <Col md={3}>
-        <h2>User Profile</h2>
+    <Row className='text-left myformpro'>
+      <Col md={4}>
+        <h2>My Profile</h2>
         {message && <Message variant="danger">{message}</Message>}
         {error && <Message variant="danger">Error occured</Message>}
         {success && (
@@ -90,6 +90,7 @@ const ProfileScreen = ({ location, history }) => {
           <Form.Group controlId="password">
             <Form.Label>Password</Form.Label>
             <Form.Control
+            required
               type="password"
               placeholder="Enter password"
               value={password}
@@ -100,6 +101,7 @@ const ProfileScreen = ({ location, history }) => {
           <Form.Group controlId="confirmPassword">
             <Form.Label>Confirm Password</Form.Label>
             <Form.Control
+            required
               type="password"
               placeholder="Confirm password"
               value={confirmPassword}
@@ -122,14 +124,15 @@ const ProfileScreen = ({ location, history }) => {
           </Button>
         </Form>
       </Col>
-      <Col md={9}>
-        <h2>My Orders</h2>
+      <Col md={8}>
+        <h4 className='text-center'>My Orders</h4>
+        <br />
         {loadingOrders ? (
           <Loader />
         ) : errorOrders ? (
           <Message variant="danger">{errorOrders}</Message>
         ) : (
-          <Table striped bordered hover responsive className="table-sm">
+          <Table id='customers' striped bordered hover responsive className="table-sm">
             <thead>
               <tr>
                 <th>ID</th>
@@ -144,6 +147,7 @@ const ProfileScreen = ({ location, history }) => {
               {orders.map((order) => (
                 <tr key={order._id}>
                   <td>{order._id}</td>
+                      
                   <td>{order.createdAt.substring(0, 10)}</td>
                   <td>{order.totalPrice}</td>
                   <td>
@@ -162,8 +166,8 @@ const ProfileScreen = ({ location, history }) => {
                   </td>
                   <td>
                     <LinkContainer to={`/order/${order._id}`}>
-                      <Button className="btn-sm" variant="light">
-                        Details
+                      <Button className="btn-sm">
+                      <i className="fa fa-info-circle"></i>
                       </Button>
                     </LinkContainer>
                   </td>

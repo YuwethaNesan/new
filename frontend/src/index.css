@@ -1,3 +1,7 @@
+*{
+  text-transform: none !important;
+}
+
 main {
   min-height: 80vh;
 }
@@ -19,27 +23,22 @@ h2 {
   font-size: 1.2rem !important;
   padding: 0.5em 0;
 }
+section{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.btn-primary{
+  background-color: #d4d4d4 !important;
+  color: #4c3e3e  !important;
+  border:2px #4c3e3e !important;
+  font-weight: bold !important;
+  border-radius: 10px !important;
 
-.carousel img {
-  height: 50%;
-  width: 85%;
 }
-
-.carousel-caption h2 {
-  color: rgb(160, 156, 156);
-}
-.carousel-caption p {
-  color: rgb(160, 156, 156);
-  margin-top: 10px;
-}
-.carousel-caption {
-  position: absolute;
-  top: 0;
-}
-
-@media only screen and (min-width: 768px) {
-  .carousel img {
-    height: 50%;
-    width: 50%;
-  }
+.btn-primary:hover{
+background-color: #4c3e3e !important;
+color: #d4d4d4 !important;
+border: #d4d4d4 !important;
+font-weight: bold !important;
+border-radius: 10px !important;
 }

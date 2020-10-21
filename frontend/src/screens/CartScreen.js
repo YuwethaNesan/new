@@ -46,7 +46,7 @@ function CartScreen({ match, location, history }) {
         <h1>Shopping Cart</h1>
         {cartItems.length === 0 ? (
           <Message>
-            Your cart is empty <Link to="/">Go to Back</Link>
+            Your cart is empty <Link to="/" className='btn-primary'>Go to Back</Link>
           </Message>
         ) : (
           <ListGroup variant="flush">
@@ -59,7 +59,7 @@ function CartScreen({ match, location, history }) {
                   <Col md={3}>
                     <Link to={`/product/${item.product}`}>{item.name}</Link>
                   </Col>
-                  <Col md={2}>$ {item.price}</Col>
+                  <Col md={2}>Rs {item.price}</Col>
                   <Col md={2}>
                     <Form.Control
                       as="select"
@@ -79,7 +79,7 @@ function CartScreen({ match, location, history }) {
                   </Col>
                   <Col md={2}>
                     <Button
-                      type="button"
+                      type="btn-primary"
                       variant="light"
                       onClick={() => removeFromCartHandler(item.product)}
                     >
@@ -100,7 +100,7 @@ function CartScreen({ match, location, history }) {
                 Subtotal ({cartItems.reduce((acc, item) => acc + item.qty, 0)})
                 items
               </h2>
-              ${" "}
+              Rs{" "}
               {cartItems
                 .reduce((acc, item) => acc + item.qty * item.price, 0)
                 .toFixed(2)}
