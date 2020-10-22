@@ -2,6 +2,7 @@
     margin-top: 30px ;
     margin-bottom: 10px ;
     color: #000;
+    background-color: transparent !important;
   }
   .about-us
   h3{

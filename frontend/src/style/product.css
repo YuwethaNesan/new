@@ -22,6 +22,12 @@
 
   
 
+  .cardbody{
+    max-width: 230px !important;
+    min-width: 230px !important;
+    max-height: 220px !important;
+    min-height: 220px !important;
+  }
   
   .cardimg{
     max-width: 215px ;
@@ -61,4 +67,12 @@
     padding: 10 !important;
     text-transform: none ;
     letter-spacing: normal ;
+  }
+  .mybtncart{
+    padding-right: 65px !important;
+    padding-left: 72px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    text-transform: none !important;
+    margin: 7px !important;
   }

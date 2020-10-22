@@ -1,12 +1,11 @@
 .myhome{
-    background-image: url('../../src/images/cover/cover2.jpg') !important;
+    background-image: url('../images/coverpro.png');
+    background-repeat: no-repeat;
     padding-top: 500px;
-    padding-bottom: 60px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: contain;
-    margin-left: -118px;
-    margin-right: -118px;
-    margin-top: -60px;
+    background-size: cover;
+    width: 100%;
+    /* margin-top: -60px; */
 }

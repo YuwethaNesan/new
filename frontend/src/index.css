@@ -1,5 +1,6 @@
 *{
   text-transform: none !important;
+  font-family: 'Open Sans', sans-serif;
 }
 
 main {
@@ -15,13 +16,11 @@ h4 {
 }
 
 h1 {
-  font-size: 1.8rem;
-  padding: 1rem 0;
+  color: #4c3e3e !important;
 }
 
 h2 {
-  font-size: 1.2rem !important;
-  padding: 0.5em 0;
+  font-weight: bolder !important;
 }
 section{
   padding-top: 30px;

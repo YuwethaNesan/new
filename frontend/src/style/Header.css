@@ -1,7 +1,7 @@
 .myhead{
     text-transform: none !important;
     height: 60px;
-    background-color: #c77171 !important;
+    background-color: #ff70a0!important;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -10,19 +10,19 @@
 }
 .myhead a{
   font-size: large;
-  color: #830000 !important;
+  color: #f3f2b8 !important;
 
 }
 .myhead
 .fa{
     padding-left: 10px;
     font-size:large;
-    color:  #830000 !important;
+    color:  #f3f2b8!important;
 }
 .logo{
     max-height: 90px;
 }
 .myhead-toggler{
-    background-color: #ffffff !important;
+    background-color: #f3f2b8 !important;
     margin: 0% !important;
 }

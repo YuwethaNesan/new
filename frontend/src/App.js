@@ -19,6 +19,9 @@ import ProductListScreen from "./screens/ProductListScreen";
 import ProductEditScreen from "./screens/ProductEditScreen";
 import OrderListScreen from "./screens/OrderListScreen";
 import FreshScreen from "./screens/FreshScreen";
+import Terms from "./components/home/terms";
+import Privacy from "./components/home/Privacy";
+import Disclimer from "./components/home/disclimer";
 
 
 function App() {
@@ -60,6 +63,13 @@ function App() {
             path="/admin/product/:id/edit"
             component={ProductEditScreen}
           />
+
+          {/* policies */}
+          <Route exact path="/terms" component={Terms} />
+          <Route exact path="/privacy" component={Privacy} />
+          <Route exact path="/disclimer" component={Disclimer} />
+
+          
         </Container>
       </main>
       <Footer />

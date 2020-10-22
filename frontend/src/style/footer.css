@@ -2,12 +2,11 @@
 # Footer
 --------------------------------------------------------------*/
 #footer{
-    background-color:  #700000;
-    color: #f8eac3 ;
+    background-color:  #4c3e3e;
+    color: #f3f2b8 ;
     position: sticky ;
     padding: 0% !important;
     margin-top: 10% !important;
-    letter-spacing: normal !important;
   }
   .p{
     padding-left: 50px !important;

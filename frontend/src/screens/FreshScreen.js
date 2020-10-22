@@ -9,7 +9,7 @@ function FreshScreen() {
     return (
         <>
     <div className='myhome responsive'>
-        <p>Yuthies Aari</p>
+
     </div>
     <section>
     <div>
