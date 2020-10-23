@@ -11,18 +11,21 @@ function FreshScreen() {
     <div className='myhome responsive'>
 
     </div>
-    <section>
+    
     <div>
         <About />
     </div>
-    </section>
+  
     <section>
     <div>
+        <h3 className='text-center'>What does our clients says</h3>
         <Talk />
     </div>
     </section>
     <section>
     <div>
+    <h3 className='text-center'>Our Team</h3>
+
         <Work />
     </div>
     </section>

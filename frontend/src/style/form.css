@@ -3,12 +3,22 @@
 }
 
   /* ===================form======================== */
+  .myform{
+    background-color: rgb(223, 223, 223) !important;
+    -webkit-box-shadow: 0px 0px 8px 1px rgba(107,107,107,1);
+  -moz-box-shadow: 0px 0px 8px 1px rgba(107,107,107,1);
+  box-shadow: 0px 0px 8px 1px rgba(107,107,107,1);
+  
+    padding: 20px;
+    margin: 40px;
+    border-radius: 10px;
+  }
 .myform
 .input-container {
   /* display: -ms-flexbox; IE10 */
   display: flex;
   width: 100%;
-  border-color: black 2px !important;
+  border-color: black 2px solid !important;
   margin-bottom: 2px !important;
   color: #000000 ;
 
@@ -29,8 +39,30 @@
 
 .icon {
   padding:2%;
-  background-color: #4c3e3e ;
-  color: #f7f0d2 ;
+  color: #e72e77;
   min-width: 50px;
   text-align: center;
+}
+.myformpro{
+  background-color: rgb(223, 223, 223) !important;
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(107,107,107,1);
+-moz-box-shadow: 0px 0px 8px 1px rgba(107,107,107,1);
+box-shadow: 0px 0px 8px 1px rgba(107,107,107,1);
+
+  padding: 20px;
+  margin: 40px;
+  border-radius: 10px;
+  
+}
+.myformpro
+  .input-container {
+    /* display: -ms-flexbox; IE10 */
+    display: flex;
+    width: 100%;
+    border-color: black 5px solid !important;
+    margin-bottom: 2px !important;
+    color: #000000 ;
+  
+  
+  
 }

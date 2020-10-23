@@ -8,7 +8,7 @@ function Product({ product }) {
     <Card border="black" className="productsub col-3 my-3 p-3 rounded">
     <Card.Img className='cardimg' src={product.image} variant="top" />
   <Link to={`/product/${product._id}`}>
-  <Button className='mybtncart btn-primary'>View More</Button>
+  <Button className='btn-primary mybtncart'>View More</Button>
   </Link>
   
   <Card.Body className='cardbody'>

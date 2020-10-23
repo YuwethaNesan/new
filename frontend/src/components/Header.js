@@ -37,24 +37,21 @@ function Header() {
                  <>
                    
                   <LinkContainer to="/login">
-                    <Link className="Header__Nav__Icons">
+                    <Nav.Link className="Header__Nav__Icons">
                       <i className="fa fa-user Header__Nav__Icons"></i> Sign In
-                    </Link>
+                    </Nav.Link>
                   </LinkContainer>
               
                 </>
                )}
               {userInfo && userInfo.token && !userInfo.isAdmin && (
                   <>
-                   
-                    <NavDropdown title={<i className="fa fa-shop">Shop Now!</i>} id="productmenu">
-                    <LinkContainer className='shop' to="/search/Sketches">
-                        <NavDropdown.Item  className='shop1'>New!</NavDropdown.Item>
-                      </LinkContainer>
-                      <LinkContainer to="/search/Portfolio">
-                        <NavDropdown.Item  className='shop1'>Portfolio</NavDropdown.Item>
-                      </LinkContainer>
-                    </NavDropdown>
+                    <LinkContainer to="/home">
+                    <Nav.Link>
+                      Shop Now
+                    </Nav.Link>
+                  </LinkContainer>
+              
                   <LinkContainer to="/">
                     <Nav.Link className="Header__Nav__Icons">
                       <i className="fa fa-home"></i>

@@ -1,13 +1,12 @@
 .about-us{
-    margin-top: 30px ;
-    margin-bottom: 10px ;
-    color: #000;
+    margin-top: -100px !important;
+    color: #636363;
     background-color: transparent !important;
   }
   .about-us
   h3{
-    margin-top: 10px ;
-    color:  #000000 ;
+    /* margin-top: 10px ; */
+    color:  #636363 ;
     text-decoration: none ;
     
   }
@@ -16,12 +15,18 @@
   }
   .about-us
   h2{
-    margin-top: 110px !important;
-    color:  #000000 ;
+    color:  #636363 ;
     text-decoration: none ;
   }
+ 
   .about-us
   li{
     list-style: none ;
   
+  }
+  .workflow1{
+    background-image: url('../images/workflow.png') !important;
+    padding: 200px;
+   margin-left: -150px;
+   margin-top: -70px !important;
   }

@@ -2,7 +2,7 @@ import React  from "react";
 import { Container, Row, Col, Button,Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 // import Logo from "../yuthiesaariPNG-01.png"
-import Logo from '../../src/images/logo.png';
+import Logo from '../../src/images/yuthies logo.png';
 import '../style/footer.css'
 
 

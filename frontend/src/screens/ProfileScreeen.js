@@ -6,7 +6,8 @@ import Message from "../components/Message";
 import Loader from "../components/Loader";
 import { getUserDetails, updateUserProfile } from "../actions/usersAction";
 import { listMyOrders } from "../actions/orderActions";
-
+import Popup from '../components/popup';
+import '../style/form.css'
 const ProfileScreen = ({ location, history }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -19,6 +20,16 @@ const ProfileScreen = ({ location, history }) => {
 
   const userDetails = useSelector((state) => state.userDetails);
   const { loading, error, user } = userDetails;
+
+
+  // popups
+  const [isOpen, setIsOpen] = useState(false);
+ 
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+  }
+ 
+
 
   const userLogin = useSelector((state) => state.userLogin);
   const { userInfo } = userLogin;
@@ -56,8 +67,9 @@ const ProfileScreen = ({ location, history }) => {
   };
 
   return (
-    <Row className='text-left myformpro'>
-      <Col md={4}>
+
+      
+    <div className='myformpro'>
         <h2>My Profile</h2>
         {message && <Message variant="danger">{message}</Message>}
         {error && <Message variant="danger">Error occured</Message>}
@@ -70,6 +82,7 @@ const ProfileScreen = ({ location, history }) => {
           <Form.Group controlId="name">
             <Form.Label>Name</Form.Label>
             <Form.Control
+            className='input-container'
               type="name"
               placeholder="Enter name"
               value={name}
@@ -123,8 +136,17 @@ const ProfileScreen = ({ location, history }) => {
             Update
           </Button>
         </Form>
-      </Col>
-      <Col md={8}>
+
+        <br />
+        <br />
+
+    <input
+    className='btn-primary'
+      type="button"
+      value="Click to View order"
+      onClick={togglePopup}
+    />{isOpen && <Popup
+      content={<Col md={12}>
         <h4 className='text-center'>My Orders</h4>
         <br />
         {loadingOrders ? (
@@ -140,7 +162,7 @@ const ProfileScreen = ({ location, history }) => {
                 <th>TOTAL</th>
                 <th>PAID</th>
                 <th>DELIVERED</th>
-                <th></th>
+                <th className='text-center'></th>
               </tr>
             </thead>
             <tbody>
@@ -166,7 +188,7 @@ const ProfileScreen = ({ location, history }) => {
                   </td>
                   <td>
                     <LinkContainer to={`/order/${order._id}`}>
-                      <Button className="btn-sm">
+                      <Button className="btn-primary text-center">
                       <i className="fa fa-info-circle"></i>
                       </Button>
                     </LinkContainer>
@@ -177,7 +199,10 @@ const ProfileScreen = ({ location, history }) => {
           </Table>
         )}
       </Col>
-    </Row>
+  }handleClose={togglePopup}
+   />} 
+      </div>
+
   );
 };
 

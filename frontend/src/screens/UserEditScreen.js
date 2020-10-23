@@ -7,6 +7,7 @@ import Loader from "../components/Loader";
 import FormContainer from "../components/FormContainer";
 import { getUserDetails, updateUser } from "../actions/usersAction";
 import { USER_UPDATE_RESET } from "../constants/userConstant";
+import '../style/form.css'
 
 const UserEditScreen = ({ match, history }) => {
   const userId = match.params.id;
@@ -51,10 +52,13 @@ const UserEditScreen = ({ match, history }) => {
 
   return (
     <>
-      <Link to="/admin/userlist" className="btn btn-light my-3">
+    <br />
+    <br />
+
+      <Link to="/admin/userlist" className="btn-primary">
         Go Back
       </Link>
-      <FormContainer>
+      <FormContainer className='myform'>
         <h1>Edit User</h1>
         {loadingUpdate && <Loader />}
         {errorUpdate && <Message variant="danger">{errorUpdate}</Message>}

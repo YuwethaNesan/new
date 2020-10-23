@@ -1,28 +1,38 @@
 .myhead{
     text-transform: none !important;
     height: 60px;
-    background-color: #ff70a0!important;
+    background-color: #e72e77!important;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
+    position: static !important;
+    align-items: stretch;
+    height: 55px;
+    padding: 0;
+    justify-content: flex-start;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 .myhead a{
   font-size: large;
-  color: #f3f2b8 !important;
+  color:  #ffffff  !important;
 
 }
 .myhead
 .fa{
     padding-left: 10px;
     font-size:large;
-    color:  #f3f2b8!important;
+    color:   #ffffff !important;
+
 }
 .logo{
-    max-height: 90px;
+    max-height: 50px;
 }
 .myhead-toggler{
-    background-color: #f3f2b8 !important;
+    background-color: #ffffff !important;
     margin: 0% !important;
 }

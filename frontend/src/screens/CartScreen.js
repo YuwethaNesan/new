@@ -12,7 +12,7 @@ import {
   Form,
 } from "react-bootstrap";
 import { addtoCart, removeFromCart } from "./../actions/cartAction";
-
+import '../style/proceed.css'
 function CartScreen({ match, location, history }) {
   const productId = match.params.id;
 
@@ -41,9 +41,16 @@ function CartScreen({ match, location, history }) {
 
   console.log(cartItems);
   return (
-    <Row>
+    <div className='proceed'>
+      <br />
+      <br />
+
+      <br />
+
+      <Row>
       <Col md={8}>
-        <h1>Shopping Cart</h1>
+        <h2 className='text-center'>Shopping Cart</h2>
+        <br />
         {cartItems.length === 0 ? (
           <Message>
             Your cart is empty <Link to="/" className='btn-primary'>Go to Back</Link>
@@ -96,10 +103,10 @@ function CartScreen({ match, location, history }) {
         <Card>
           <ListGroup variant="flush">
             <ListGroup.Item>
-              <h2>
+              <h3>
                 Subtotal ({cartItems.reduce((acc, item) => acc + item.qty, 0)})
                 items
-              </h2>
+              </h3>
               Rs{" "}
               {cartItems
                 .reduce((acc, item) => acc + item.qty * item.price, 0)
@@ -119,6 +126,8 @@ function CartScreen({ match, location, history }) {
         </Card>
       </Col>
     </Row>
+    </div>
+  
   );
 }
 

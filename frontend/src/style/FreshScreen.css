@@ -5,7 +5,16 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-    width: 100%;
+    background-size: contain;
+    padding-bottom: 240px !important;
+    margin-left: -130px;
+    margin-right: -120px;
+
     /* margin-top: -60px; */
+}
+
+h3{
+  color:  #a1a1a1 !important;
+  text-decoration: none ;
+  letter-spacing: normal !important;
 }

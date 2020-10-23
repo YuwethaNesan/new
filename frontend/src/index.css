@@ -1,6 +1,6 @@
 *{
   text-transform: none !important;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Ramabhadra', sans-serif;
 }
 
 main {
@@ -16,7 +16,7 @@ h4 {
 }
 
 h1 {
-  color: #4c3e3e !important;
+  color: #00272c!important;
 }
 
 h2 {
@@ -27,17 +27,36 @@ section{
   padding-bottom: 30px;
 }
 .btn-primary{
-  background-color: #d4d4d4 !important;
-  color: #4c3e3e  !important;
-  border:2px #4c3e3e !important;
+  background-color: #ffffff !important;
+  color:  #e72e77  !important;
+  border:2px solid#e72e77 !important;
   font-weight: bold !important;
   border-radius: 10px !important;
+  font-size: medium !important;
+  padding: 5px !important;
 
 }
 .btn-primary:hover{
-background-color: #4c3e3e !important;
-color: #d4d4d4 !important;
-border: #d4d4d4 !important;
+background-color:  #e72e77 !important;
+color: #ffffff !important;
+border: #ffffff !important;
 font-weight: bold !important;
 border-radius: 10px !important;
+font-size: medium !important;
+padding: 5px !important;
+border:2px solid transparent !important;
+}
+.paystep{
+  background-color: #fffef9 ;
+  /* padding: 10px ; */
+  margin-top: 4% !important;
+  padding: 20px;
+  margin-bottom: 20% !important;
+  margin-left: 10% !important;
+  margin-right: 10% !important;
+
+}
+.paystep
+h4{
+    text-align: center;
 }

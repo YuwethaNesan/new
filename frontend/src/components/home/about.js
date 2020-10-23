@@ -9,10 +9,9 @@ import '../../style/about.css'
 function About() {
   return (
       <>
-
+ 
     <section id="about-us" className="responsive about-us">
     <div className="container" data-aos="fade-up">
-
       <div className="row content fo">
         <div className="col-lg-6" data-aos="fade-right">
           <h2>Our Target</h2>
@@ -38,7 +37,7 @@ function About() {
       </div>
 
     </div>
-  
+    <div className='workflow1' ></div>
   </section>
   
   </>

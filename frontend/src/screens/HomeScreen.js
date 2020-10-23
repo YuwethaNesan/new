@@ -11,7 +11,7 @@ import Paginate from "./../components/Paginate";
 import ProductCarousel from "../components/ProductCarousel";
 import Meta from "./../components/Meta";
 import { Link } from "react-router-dom";
-
+import '../style/home.css'
 function HomeScreen({ match }) {
   const keyword = match.params.keyword;
 
@@ -29,11 +29,29 @@ function HomeScreen({ match }) {
 
   return (
     <>
+    <br />
+    <br />
+
   
-        <Link to="/" className="btn btn-light">
+        <Link to="/" className="btn-primary">
           Go Back
         </Link>
+        <Row>
+        <aside className='col-2 sections'>
+     <div >
+       <br />
+       <h3>Categories</h3>
+      <div>
+      <Link to='/search/Sketches' className='shop'>Sketches</Link>
+      </div>
+      <div>
+      <Link to='/search/Portfolio' className='shop'>Portfolios</Link>
+      </div>
+
+     </div>
+     </aside>
      
+     <div className=''>
       <h2 className='key text-center'>{keyword}</h2>
       {loading ? (
         <Loader />
@@ -43,7 +61,7 @@ function HomeScreen({ match }) {
         <>
           <Row>
             {products.map((product) => (
-              <Col sm={12} md={6} lg={4} xl={3} key={product._id}>
+              <Col sm={12} md={4} lg={4} xl={3} key={product._id}>
                 <Product product={product} />
               </Col>
             ))}
@@ -53,8 +71,11 @@ function HomeScreen({ match }) {
             pages={pages}
             keyword={keyword && keyword ? keyword : ""}
           />
+          
         </>
       )}
+      </div>
+      </Row>
     </>
   );
 }

@@ -90,7 +90,7 @@ function ProductScreeen({ history, match }) {
                     text={`${product.numReviews} reviews`}
                   />
                 </ListGroup.Item>
-                <ListGroup.Item>Price:$ {product.price}</ListGroup.Item>
+                <ListGroup.Item>Price:Rs{product.price}</ListGroup.Item>
                 <ListGroup.Item>
                   Description:{product.description}
                 </ListGroup.Item>
@@ -103,22 +103,15 @@ function ProductScreeen({ history, match }) {
                     <Row>
                       <Col>Price:</Col>
                       <Col>
-                        <strong>${product.price}</strong>
+                        <strong>Rs{product.price}</strong>
                       </Col>
                     </Row>
                   </ListGroup.Item>
-                  <ListGroup.Item>
-                    <Row>
-                      <Col>Status:</Col>
-                      <Col>
-                        {product.countInStock > 0 ? "In Stock" : "Out of Stock"}
-                      </Col>
-                    </Row>
-                  </ListGroup.Item>
+                  
                   {product.countInStock > 0 && (
                     <ListGroup.Item>
                       <Row>
-                        <Col>Qty</Col>
+                        <Col>No of Materials</Col>
                         <Col>
                           <Form.Control
                             as="select"
@@ -152,7 +145,7 @@ function ProductScreeen({ history, match }) {
             </Col>
           </Row>
           <Row>
-            <Col md={6}>
+            <Col md={8}>
               <h2>Reviews</h2>
               {product.reviews.length === 0 && <Message>No Reviews</Message>}
               <ListGroup variant="flush">
