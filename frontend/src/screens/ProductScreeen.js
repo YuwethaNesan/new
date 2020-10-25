@@ -65,9 +65,13 @@ function ProductScreeen({ history, match }) {
   };
   return (
     <>
-      <Link to="/" className="btn btn-light my-3">
+    <br />
+      <Link to="/" className="btn-primary">
         Go Back
       </Link>
+    <br />
+    <br />
+
       {loading ? (
         <Loader />
       ) : error ? (

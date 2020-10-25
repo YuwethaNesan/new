@@ -33,7 +33,7 @@ function ShippingScreen({ history }) {
      <br />
      <br />
 
-<div className='address'>
+<div className='address myform'>
       <Row className='addalert'>
       <Col className='col-6'>
       <Alert className='alertadd' variant="success">

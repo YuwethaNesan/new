@@ -41,7 +41,7 @@ function Header() {
                       <i className="fa fa-user Header__Nav__Icons"></i> Sign In
                     </Nav.Link>
                   </LinkContainer>
-              
+                  
                 </>
                )}
               {userInfo && userInfo.token && !userInfo.isAdmin && (
@@ -63,7 +63,7 @@ function Header() {
                     </Nav.Link>
                     </LinkContainer>
                 
-                    <NavDropdown className='shop' title={<i className="fa fa-user"></i>} id="username">
+                    <NavDropdown title={<i className="fa fa-user"></i>} id="username">
                       <LinkContainer to="/profile">
                         <NavDropdown.Item>
                         {userInfo.name}'s Profile

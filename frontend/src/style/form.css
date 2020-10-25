@@ -4,28 +4,29 @@
 
   /* ===================form======================== */
   .myform{
-    background-color: rgb(223, 223, 223) !important;
-    -webkit-box-shadow: 0px 0px 8px 1px rgba(107,107,107,1);
+    background-color: rgb(255, 230, 249) !important;
+    /* -webkit-box-shadow: 0px 0px 8px 1px rgba(107,107,107,1);
   -moz-box-shadow: 0px 0px 8px 1px rgba(107,107,107,1);
-  box-shadow: 0px 0px 8px 1px rgba(107,107,107,1);
+  box-shadow: 0px 0px 8px 1px rgba(107,107,107,1); */
   
     padding: 20px;
     margin: 40px;
-    border-radius: 10px;
   }
 .myform
 .input-container {
   /* display: -ms-flexbox; IE10 */
   display: flex;
   width: 100%;
-  border-color: black 2px solid !important;
   margin-bottom: 2px !important;
   color: #000000 ;
 
 
 }
 .myformedit{
-  background-color:#fffef9;
+  background-color: rgb(255, 231, 231) !important;
+  /* -webkit-box-shadow: 0px 0px 7px 1px rgba(163,163,163,1);
+  -moz-box-shadow: 0px 0px 7px 1px rgba(163,163,163,1);
+  box-shadow: 0px 0px 7px 1px rgba(163,163,163,1); */
   padding-left: 15px ;
   padding-right: 15px ;
   padding-bottom: 15px ;
@@ -44,14 +45,14 @@
   text-align: center;
 }
 .myformpro{
-  background-color: rgb(223, 223, 223) !important;
+  background-color: rgb(255, 219, 219)  !important;
+/* 
   -webkit-box-shadow: 0px 0px 8px 1px rgba(107,107,107,1);
 -moz-box-shadow: 0px 0px 8px 1px rgba(107,107,107,1);
-box-shadow: 0px 0px 8px 1px rgba(107,107,107,1);
+box-shadow: 0px 0px 8px 1px rgba(107,107,107,1); */
 
   padding: 20px;
   margin: 40px;
-  border-radius: 10px;
   
 }
 .myformpro
@@ -65,4 +66,93 @@ box-shadow: 0px 0px 8px 1px rgba(107,107,107,1);
   
   
   
+}
+.register-photo {
+  background: #f1f7fc;
+  padding: 80px 0
+}
+
+.register-photo .image-holder {
+  display: table-cell;
+  width: auto;
+  background: url(../images/cover/Login.jpg);
+  background-size: cover
+}
+.image-holder{
+
+  max-width: 300px;
+  min-height: 400px ;
+}
+.register-photo .form-container {
+  display: table;
+  max-width: 00px;
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
+}
+
+.register-photo form {
+  display: table-cell;
+  width: 100px;
+  background-color: #ffffff;
+  padding: 40px 60px;
+  color: #505e6c
+}
+
+@media (max-width:991px) {
+  .register-photo form {
+      padding: 40px
+  }
+}
+
+.register-photo form h2 {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 30px
+}
+
+.register-photo form .form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #dfe7f1;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+  color: inherit;
+  text-indent: 0px;
+  height: 40px
+}
+
+.register-photo form .form-check {
+  font-size: 13px;
+  line-height: 20px
+}
+
+.register-photo form .btn-primary {
+  background: green;
+  border: none;
+  border-radius: 4px;
+  padding: 11px;
+  box-shadow: none;
+  margin-top: 35px;
+  text-shadow: none;
+  outline: none !important
+}
+
+.register-photo form .btn-primary:hover,
+.register-photo form .btn-primary:active {
+  background: green
+}
+
+.register-photo form .btn-primary:active {
+  transform: translateY(1px)
+}
+
+.register-photo form .already {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #6f7a85;
+  opacity: 0.9;
+  text-decoration: none
 }

@@ -29,28 +29,34 @@ function HomeScreen({ match }) {
 
   return (
     <>
-    <br />
+
     <br />
 
   
         <Link to="/" className="btn-primary">
           Go Back
         </Link>
-        <Row>
-        <aside className='col-2 sections'>
-     <div >
-       <br />
-       <h3>Categories</h3>
-      <div>
+        <br />
+      
+        <ProductCarousel />
+     <div>
+       
+      <div className='row'>
+     <div className='col-6'>
+
       <Link to='/search/Sketches' className='shop'>Sketches</Link>
       </div>
-      <div>
+     <div className='col-6'>
+      
       <Link to='/search/Portfolio' className='shop'>Portfolios</Link>
+      </div>
       </div>
 
      </div>
-     </aside>
-     
+ 
+     <br />
+     <br />
+
      <div className=''>
       <h2 className='key text-center'>{keyword}</h2>
       {loading ? (
@@ -75,7 +81,7 @@ function HomeScreen({ match }) {
         </>
       )}
       </div>
-      </Row>
+     
     </>
   );
 }

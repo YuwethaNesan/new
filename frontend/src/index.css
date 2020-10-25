@@ -1,8 +1,11 @@
 *{
   text-transform: none !important;
   font-family: 'Ramabhadra', sans-serif;
+  
 }
-
+body{
+margin: 0% !important;
+}
 main {
   min-height: 80vh;
 }
@@ -59,4 +62,13 @@ border:2px solid transparent !important;
 .paystep
 h4{
     text-align: center;
+}
+a{
+  text-decoration: none;
+  list-style: none;
+}
+a:hover{
+  text-decoration: none !important;
+  font-style: normal !important;
+  list-style: none;
 }

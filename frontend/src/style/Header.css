@@ -19,7 +19,9 @@
 }
 .myhead a{
   font-size: large;
+  font-weight: lighter !important;
   color:  #ffffff  !important;
+  letter-spacing: normal;
 
 }
 .myhead
@@ -30,7 +32,7 @@
 
 }
 .logo{
-    max-height: 50px;
+    max-height: 80px;
 }
 .myhead-toggler{
     background-color: #ffffff !important;

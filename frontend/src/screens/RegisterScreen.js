@@ -77,6 +77,7 @@ const RegisterScreen = ({ location, history }) => {
             type="email"
             placeholder="Enter email"
             required
+            email
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           ></Form.Control></div>
@@ -92,7 +93,7 @@ const RegisterScreen = ({ location, history }) => {
             placeholder="Enter password"
             value={password}
             required
-            minLength='8'
+            minLength='6'
             onChange={(e) => setPassword(e.target.value)}
           ></Form.Control></div>
         </Form.Group>

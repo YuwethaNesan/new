@@ -14,31 +14,31 @@ function Footer() {
   
     
         <div className="col-md-3">
-          <h6 className="font-weight-bold">
+          <h5>
             <Link to="/terms">Terms & Conditions</Link>
-          </h6>
+          </h5>
         </div>
 
   
   
         <div className="col-md-3">
-          <h6 className=" font-weight-bold">
+          <h5>
             <Link to="/privacy">Privacy Policy</Link>
-          </h6>
+          </h5>
         </div>
      
   
        
         <div className="col-md-3">
-          <h6 className=" font-weight-bold">
+          <h5>
             <Link to="/disclimer">Disclimer</Link>
-          </h6>
+          </h5>
         </div>
        
         <div className="col-md-3">
-          <h6 className=" font-weight-bold">
+          <h5>
             <Link to="#!">Door Step Service</Link>
-          </h6>
+          </h5>
         </div>
         
   

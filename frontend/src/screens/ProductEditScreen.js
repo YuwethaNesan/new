@@ -93,10 +93,13 @@ const ProductEditScreen = ({ match, history }) => {
 
   return (
     <>
+      <br />
+      <br />
       <Link to="/admin/productlist" className="btn-primary">
         Go Back
       </Link>
-      <FormContainer className='myform'>
+    <div className='myform'>
+      <FormContainer >
         <h1>Edit Product</h1>
         {loadingUpdate && <Loader />}
         {errorUpdate && (
@@ -106,7 +109,7 @@ const ProductEditScreen = ({ match, history }) => {
           <Loader />
         ) : error ? (
           <Message variant="danger">{error}</Message>
-        ) : (
+        ) : ( 
           <Form onSubmit={submitHandler}>
             <Form.Group controlId="name">
               <Form.Label>Name</Form.Label>
@@ -191,6 +194,7 @@ const ProductEditScreen = ({ match, history }) => {
           </Form>
         )}
       </FormContainer>
+      </div>
     </>
   );
 };

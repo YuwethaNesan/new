@@ -22,6 +22,7 @@ import FreshScreen from "./screens/FreshScreen";
 import Terms from "./components/home/terms";
 import Privacy from "./components/home/Privacy";
 import Disclimer from "./components/home/disclimer";
+import Adminscreen from './screens/Adminscreen'
 
 
 function App() {
@@ -68,6 +69,10 @@ function App() {
           <Route exact path="/terms" component={Terms} />
           <Route exact path="/privacy" component={Privacy} />
           <Route exact path="/disclimer" component={Disclimer} />
+
+          {/* admin */}
+          <Route exact path="/admin" component={Adminscreen} />
+
 
           
         </Container>

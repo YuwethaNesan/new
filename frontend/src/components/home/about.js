@@ -14,8 +14,8 @@ function About() {
     <div className="container" data-aos="fade-up">
       <div className="row content fo">
         <div className="col-lg-6" data-aos="fade-right">
-          <h2>Our Target</h2>
-          <h3>Match Our Designs With Your Desires</h3>
+          <h2>Who We Are</h2>
+          <h5>Match Our Designs With Your Desires</h5>
         </div>
         <div className="col-lg-6 pt-4 pt-lg-0 about-us" data-aos="fade-left">
           <p>

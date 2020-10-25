@@ -19,15 +19,20 @@
   "author": "Yuwetha Nesan",
   "license": "MIT",
   "dependencies": {
+    "@trendmicro/react-sidenav": "^0.5.0",
     "bcryptjs": "^2.4.3",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-async-handler": "^1.1.4",
+    "infinite-react-carousel": "^1.2.11",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.10.7",
     "morgan": "^1.10.0",
     "multer": "^1.4.2",
-    "react-alice-carousel": "^2.0.1"
+    "react": "^17.0.1",
+    "react-alice-carousel": "^2.0.1",
+    "react-responsive-carousel": "^3.2.10",
+    "react-slick": "^0.27.12"
   },
   "devDependencies": {
     "concurrently": "^5.3.0",

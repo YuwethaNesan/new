@@ -30,6 +30,7 @@ const PaymentScreen = ({ history }) => {
       <br />
       <CheckoutSteps step1 step2 step3 />
       <br />
+      <br />
       <div className='paystep'>
       <Row >
       <Col className='col-6'>

@@ -1,0 +1,16 @@
+
+.check{
+    background-color: #fcfcfc ;
+    color: #000000  ;
+    font-weight: 500 ;
+    letter-spacing: normal;
+  
+  }
+  .check
+  .active{
+    background-color:#00272c;
+    color:  #ffffff !important;
+    font-weight: 500 ;
+    letter-spacing: normal ;
+  
+  }

@@ -8,7 +8,6 @@ import Loader from "./../components/Loader";
 import { login } from "./../actions/usersAction";
 import FormContainer from "./../components/FormContainer";
 import Meta from "./../components/Meta";
-import '../style/form.css'
 
 function LoginScreen({ location, history }) {
   const [email, setEmail] = useState("");
