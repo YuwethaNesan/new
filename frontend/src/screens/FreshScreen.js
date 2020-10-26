@@ -26,7 +26,6 @@ function FreshScreen() {
     <div>
     <h3 className='text-center'>Our Team</h3>
 
-        <Work />
     </div>
     </section>
         </> 

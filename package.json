@@ -29,6 +29,7 @@
     "mongoose": "^5.10.7",
     "morgan": "^1.10.0",
     "multer": "^1.4.2",
+    "nodemailer": "^6.4.14",
     "react": "^17.0.1",
     "react-alice-carousel": "^2.0.1",
     "react-responsive-carousel": "^3.2.10",

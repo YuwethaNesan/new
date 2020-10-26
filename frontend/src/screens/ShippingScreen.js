@@ -49,7 +49,7 @@ function ShippingScreen({ history }) {
       </Col>
       <Col className='add col-6'>
         <h3>Address</h3>
-      <Form onSubmit={submitHandler}>
+      <Form className='myform' onSubmit={submitHandler}>
         <Form.Group controlId="address">
           <Form.Label>Address</Form.Label>
           <Form.Control
