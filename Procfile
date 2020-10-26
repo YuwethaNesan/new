@@ -1,4 +1,1 @@
-  
-  
-web: node server
-heroku-postbuild
+heroku local web
