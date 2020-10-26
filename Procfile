@@ -1,4 +1,4 @@
   
   
 web: node server
-web:heroku-postbuild
+heroku-postbuild
