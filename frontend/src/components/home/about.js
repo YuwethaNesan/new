@@ -37,7 +37,6 @@ function About() {
       </div>
 
     </div>
-    <div className='workflow1' ></div>
   </section>
   
   </>

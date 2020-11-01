@@ -1,13 +1,20 @@
 import React  from "react";
 import { Container, Row, Col, Button,Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+
 // import Logo from "../yuthiesaariPNG-01.png"
 import Logo from '../../src/images/yuthies logo.png';
 import '../style/footer.css'
 
 
 function Footer() {
+  const dispatch = useDispatch();
+  const userLogin = useSelector((state) => state.userLogin);
+  const { userInfo } = userLogin;
   return (
+    <>
+   {userInfo && !userInfo.isAdmin && (
     <footer className="page-footer font-small" id='footer'>
     <div>
     <div className="row text-center d-flex  pt-5 ">
@@ -50,7 +57,9 @@ function Footer() {
 
       <div className="foot text-justify justify-content-left">
         <div>
-          <Image className='text-center logo' src={Logo} alt='website logo' /><br />
+          <Image className='text-center logo' src={Logo} alt='website logo' />
+          
+          <br />
           We are one of the leading Aari Designing in Sri Lanka since 2020.
           We can provide perfect designs and perfect embro1deries with material collecting 
           and delivery Service. You can order any kind of aari designs such as glitters, threds etc.
@@ -83,7 +92,8 @@ function Footer() {
             </Link>
   
           </div>
-      <hr className="rgba-white-light"  />
+      {/* <hr className="rgba-white-light"  /> */}
+      <br />
 
           <div className="text-right col-10 contact">
           <p>+94767703654  <i className="text-right fa fa-phone fa-lg white-text  mr-4" aria-hidden="true"></i><br />
@@ -107,9 +117,9 @@ function Footer() {
     </div>
 
   </footer>
+    )}
 
-
-    
+    </>
   );
 }
 

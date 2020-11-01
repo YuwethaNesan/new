@@ -1,10 +1,14 @@
 *{
   text-transform: none !important;
   font-family: 'Ramabhadra', sans-serif;
-  
+  letter-spacing: 1px !important;
+
+  border-color: rgb(184, 184, 184) !important;
 }
+
 body{
 margin: 0% !important;
+background-color: rgb(255, 255, 255) !important;
 }
 main {
   min-height: 80vh;
@@ -19,7 +23,7 @@ h4 {
 }
 
 h1 {
-  color: #00272c!important;
+  color: #1e002c!important;
 }
 
 h2 {
@@ -31,23 +35,23 @@ section{
 }
 .btn-primary{
   background-color: #ffffff !important;
-  color:  #e72e77  !important;
-  border:2px solid#e72e77 !important;
-  font-weight: bold !important;
-  border-radius: 10px !important;
+  color:  #c91e8dff  !important;
+  border:1px solid#c91e8dff !important;
+  border-radius: 5px !important;
   font-size: medium !important;
   padding: 5px !important;
 
 }
 .btn-primary:hover{
-background-color:  #e72e77 !important;
+/* background-color:  #c91e8dff !important; */
+background: #c91e8dff;
+background: linear-gradient(90deg, #c91e8dff 0%, #6d129ff0 100%);
 color: #ffffff !important;
 border: #ffffff !important;
-font-weight: bold !important;
-border-radius: 10px !important;
+border-radius: 5px !important;
 font-size: medium !important;
 padding: 5px !important;
-border:2px solid transparent !important;
+border:1px solid transparent !important;
 }
 .paystep{
   background-color: #fffef9 ;
@@ -71,4 +75,65 @@ a:hover{
   text-decoration: none !important;
   font-style: normal !important;
   list-style: none;
+}
+.img-responsive {
+  display: none;
+}
+
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+  .page-head {
+    font-size: 18px;
+    /* margin-top: -20px; */
+    padding: 0px;
+  }
+  .btn-primary{
+    padding: 0 !important;
+  }
+  .img{
+    max-width: 50% !important;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+  .container-gallery .vertical-buttons {
+    display: flex;
+    align-items: center;
+    /* display: block; */
+  }
+  .btn-primary{
+    background-color: #ffffff !important;
+    color:  #c91e8dff  !important;
+    border:1px solid#c91e8dff !important;
+    font-weight: bold !important;
+    border-radius: 5px !important;
+    font-size: medium !important;
+    padding: 5px !important;
+  
+  }
+  .btn-primary:hover{
+  background-color:  #c91e8dff !important;
+  color: #ffffff !important;
+  border: #ffffff !important;
+  font-weight: bold !important;
+  border-radius: 5px !important;
+  font-size: medium !important;
+  padding: 5px !important;
+  border:1px solid transparent !important;
+  }
+  .myhead{
+    background-color: #c91e8dff;
+    background-size: cover;
+  }
+  .img{
+    max-width: 50% !important;
+  }
+  .col-6{
+    max-width: 100% !important;
+  }
+  .workflow{
+    max-width: 25% !important;
+    min-width: 25% !important;
+
+  }
+  
 }

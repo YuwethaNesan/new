@@ -33,9 +33,9 @@ function HomeScreen({ match }) {
     <br />
 
   
-        <Link to="/" className="btn-primary">
+        {/* <Link to="/" className="btn-primary">
           Go Back
-        </Link>
+        </Link> */}
         <br />
       
         <ProductCarousel />

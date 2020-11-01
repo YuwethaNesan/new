@@ -26,12 +26,12 @@ const PaymentScreen = ({ history }) => {
   };
 
   return (
-    <FormContainer className='pay col-12'>
+    <>
       <br />
       <CheckoutSteps step1 step2 step3 />
       <br />
       <br />
-      <div className='paystep'>
+      <div className='paystep paycontainer'>
       <Row >
       <Col className='col-6'>
       <h4 className='text-center'>Payment Method</h4>
@@ -67,8 +67,7 @@ const PaymentScreen = ({ history }) => {
       </Row>
       </div>
 
-    </FormContainer>
-    
+</>    
   );
 };
 

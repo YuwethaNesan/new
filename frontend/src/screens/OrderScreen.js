@@ -205,7 +205,7 @@ const OrderScreen = ({ match, history }) => {
                   <Col>Rs{order.totalPrice}</Col>
                 </Row>
               </ListGroup.Item>
-              <StripeCheckout
+              {/* <StripeCheckout
                     stripeKey="pk_test_51HbW5xJnYK09rM9t8iYTd5LvwTOdyboIRqKC16qkMwDakmiyV70Xy4yD69jNmBLPuo6Pf4K2BHhaff84VBQvDnsb00lEFoiKY7"
                     token={Ontoken}
                     billingAddress
@@ -215,7 +215,7 @@ const OrderScreen = ({ match, history }) => {
                     name="Yuthies Aari"
                    
 
-                    />
+                    /> */}
               {!order.isPaid && (
                 <ListGroup.Item>
                   {/* {loadingPay && <Loader />} */}

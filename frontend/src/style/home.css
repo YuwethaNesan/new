@@ -1,5 +1,5 @@
 .key{
-    color:#00272c !important;
+    color: #26172b !important;
 }
 .sections{
     margin-left: -90px !important;
@@ -7,7 +7,7 @@
 .shop{
     margin-left: 130px;
     background-color: rgb(255, 255, 255);
-    border: #00272c solid 2px;
+    border:  #26172b solid 2px;
     padding: 5px;
     border-radius: 20px;
     padding-left: 100px;
@@ -16,8 +16,8 @@
 }
 .shop:hover{
     margin-left: 130px;
-    background-color: #e72e77 !important;
-    border: #e72e77 solid 2px;
+    background-color: #c91e8dff !important;
+    border: #c91e8dff solid 2px;
     padding: 5px;
     border-radius: 20px;
     padding-left: 100px;

@@ -2,12 +2,12 @@
     background-image: url('../images/coverpro.png');
     background-repeat: no-repeat;
     padding-top: 500px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    -webkit-background-size: contain;
+    -moz-background-size:contain;
+    -o-background-size: contain;
     background-size: contain;
     padding-bottom: 240px !important;
-    margin-left: -130px;
+    margin-left: -120px;
     margin-right: -120px;
 
     /* margin-top: -60px; */

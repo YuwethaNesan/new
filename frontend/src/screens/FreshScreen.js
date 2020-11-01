@@ -8,17 +8,26 @@ import Work from '../components/home/work';
 function FreshScreen() {
     return (
         <>
-    <div className='myhome responsive'>
+    <div className='myhome'>
 
     </div>
     
     <div>
         <About />
     </div>
-  
+  <Work />
     <section>
     <div>
+    <br />
+    <br />
+
         <h3 className='text-center'>What does our clients says</h3>
+        <br />
+        <p className='text-center'>Ask them by touch their Photos</p>
+        <br />
+
+        <br />
+
         <Talk />
     </div>
     </section>

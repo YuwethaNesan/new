@@ -1,22 +1,4 @@
-.myhead{
-    text-transform: none !important;
-    height: 60px;
-    background-color: #e72e77!important;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
-    position: static !important;
-    align-items: stretch;
-    height: 55px;
-    padding: 0;
-    justify-content: flex-start;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
 
-}
 .myhead a{
   font-size: large;
   font-weight: lighter !important;
@@ -25,16 +7,112 @@
 
 }
 .myhead
-.fa{
+.fa
+a{
     padding-left: 10px;
     font-size:large;
     color:   #ffffff !important;
+    background-color: transparent !important;
+}
+
+.logo{
+    max-height: 60px;
+    padding: 0% !important;
+}
+
+.myhead{
+    text-transform: none !important;
+    /* background-color: #c91e8dff!important; */
+    background: #c91e8dff;
+background: linear-gradient(90deg, #c91e8dff 0%, #6d129ff0 100%);
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
+    padding: 0px !important;
 
 }
-.logo{
-    max-height: 80px;
-}
-.myhead-toggler{
-    background-color: #ffffff !important;
+.navbar-toggler-collapsed{
+    background-color: #c91e8dff !important;
     margin: 0% !important;
 }
+.dropdown-menu{
+    /* background-color: #c91e8dff !important; */
+    background: #c91e8dff;
+background: linear-gradient(90deg, #c91e8dff 0%, #6d129ff0 100%);
+    border: solid transparent !important;
+}
+.show
+a{
+    color: #ffffff !important;
+}
+.show
+.active{
+    background-color: white !important;
+    color: #c91e8dff !important;
+}
+.show
+a:hover{
+    color:  #6d129ff0 !important;
+    background-color: transparent !important;
+}
+.fa:hover{
+    color:  #26172b !important;
+    background-color: transparent !important;
+}
+
+
+/* sidenav */
+
+
+.sidenav {
+    height: 100% !important;
+    width: 160px !important;
+    position: fixed !important;
+    z-index: 1 !important;
+    top: 0 !important;
+    left: 0 !important;
+    background-color:  #26172b!important;
+    padding-top: 20px !important;
+    
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px !important;
+    text-decoration: none !important;
+    font-size: 25px !important;
+    color: #818181 !important;
+    display: block !important;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1 !important;
+  }
+ .adminbr{
+     color: #ffffff !important;
+ }
+ .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 13px;}
+  }
+ /* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+  

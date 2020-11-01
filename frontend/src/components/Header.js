@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import Logo from '../images/logo.png';
 
 import { Route } from "react-router-dom";
+import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
 // import SearchBox from "./Searchbox";
 
 function Header() {
@@ -20,6 +21,8 @@ function Header() {
   return (
     <div>
       <header>
+      {userInfo && !userInfo.isAdmin && (
+
         <Navbar className='myhead' expand="lg" collapseOnSelect>
           <Container>
             <LinkContainer to="/">
@@ -33,17 +36,7 @@ function Header() {
                 render={({ history }) => <SearchBox history={history} />}
               /> */}
               <Nav className="ml-auto">
-              {!userInfo && (
-                 <>
-                   
-                  <LinkContainer to="/login">
-                    <Nav.Link className="Header__Nav__Icons">
-                      <i className="fa fa-user Header__Nav__Icons"></i> Sign In
-                    </Nav.Link>
-                  </LinkContainer>
-                  
-                </>
-               )}
+            
               {userInfo && userInfo.token && !userInfo.isAdmin && (
                   <>
                     <LinkContainer to="/home">
@@ -78,9 +71,15 @@ function Header() {
                 )}
 
 
-                {userInfo && userInfo.isAdmin && (
+               
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+      )}
+       {userInfo && userInfo.isAdmin && (
                   <>
-                    <NavDropdown title={`Admin`} id="adminmenu">
+                    <NavDropdown className='sidenav' title={`Admin`} id="adminmenu">
                       <LinkContainer to="/admin/userlist">
                         <NavDropdown.Item>Users</NavDropdown.Item>
                       </LinkContainer>
@@ -96,10 +95,24 @@ function Header() {
                     </NavDropdown>
                   </>
                 )}
-              </Nav>
+                  {!userInfo && (
+                 <>
+                     <Navbar className='myhead' expand="lg" collapseOnSelect>
+                  <Container>
+                    <Navbar.Collapse>
+                    <Nav>
+                  <LinkContainer to="/login">
+                    <Nav.Link className="Header__Nav__Icons">
+                      <i className="fa fa-user Header__Nav__Icons"></i> Sign In
+                    </Nav.Link>
+                  </LinkContainer>
+                  </Nav>
             </Navbar.Collapse>
           </Container>
         </Navbar>
+                  
+                </>
+               )}
       </header>
     </div>
   );

@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import "./style/Header.css";
 import "./style/FreshScreen.css";
-import "./style/Talk.css"
 import './style/table.css'
 
 

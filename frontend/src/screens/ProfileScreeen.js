@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Table, Form, Button, Row, Col } from "react-bootstrap";
+import { Table, Form, Button, Row, Col,Image } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import Message from "../components/Message";
@@ -8,6 +8,7 @@ import { getUserDetails, updateUserProfile } from "../actions/usersAction";
 import { listMyOrders } from "../actions/orderActions";
 import Popup from '../components/popup';
 import '../style/form.css'
+import Profimg from '../images/Mobile-login-01.png'
 const ProfileScreen = ({ location, history }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -70,7 +71,7 @@ const ProfileScreen = ({ location, history }) => {
 
       
     <div className='myformpro'>
-        <h2>My Profile</h2>
+        <h2 className='text-center'>My Profile</h2>
         {message && <Message variant="danger">{message}</Message>}
         {error && <Message variant="danger">Error occured</Message>}
         {success && (
@@ -78,6 +79,8 @@ const ProfileScreen = ({ location, history }) => {
         )}
 
         {loading && <Loader />}
+        <Row>
+          <Col md='4'>
         <Form onSubmit={submitHandler}>
           <Form.Group controlId="name">
             <Form.Label>Name</Form.Label>
@@ -132,7 +135,7 @@ const ProfileScreen = ({ location, history }) => {
             ></Form.Control>
           </Form.Group>
 
-          <Button type="submit" variant="primary">
+          <Button type="submit" className='btn-primary' variant="primary">
             Update
           </Button>
         </Form>
@@ -201,6 +204,11 @@ const ProfileScreen = ({ location, history }) => {
       </Col>
   }handleClose={togglePopup}
    />} 
+   </Col>
+   <Col md='8'>
+   <Image className='profimg img' src={Profimg} />
+   </Col>
+   </Row>
       </div>
 
   );

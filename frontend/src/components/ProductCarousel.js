@@ -50,50 +50,65 @@ import img3 from '../images/productcarousel3.png'
 
  function ProductCarousel() {
    return (
-     <div>
+     
        <Carousel>
-                <div>
-                    <img src={img1} />
-                    
-                </div>
-                <div>
+               
+                
                     <img src={img2} />
-                </div>
-                <div>
+                
+                
                     <img src={img3} />
-                </div>
-                <div>
-                    <img src={img1} />
+                
+                
                     
-                </div>
-                <div>
+                
+                
                     <img src={img2} />
-                </div>
-                <div>
+                
+                
                     <img src={img3} />
-                </div>
-                <div>
-                    <img src={img1} />
+                
+                
+          
+                    <img src={img3} />
+                
+                
                     
-                </div>
-                <div>
                     <img src={img2} />
-                </div>
-                <div>
-                    <img src={img3} />
-                </div>
-                <div>
-                    <img src={img1} />
-                    
-                </div>
-                <div>
+                
+                
+                <img src={img3} />
+            
+            
+                
+            
+            
+                <img src={img2} />
+            
+            
+                <img src={img3} />
+            
+            
+      
+                <img src={img3} />
+            
+            
+                
+            
+            
+                <img src={img2} />
+            
+            
+                <img src={img3} />
+            
+                
                     <img src={img2} />
-                </div>
-                <div>
+                
+                
                     <img src={img3} />
-                </div>
+                
             </Carousel>
-     </div>
+     
    )
  }
  
