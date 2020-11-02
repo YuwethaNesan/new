@@ -62,8 +62,8 @@ a:hover{
 /* adminnav */
 .admin{
   color: rgb(255, 255, 255) !important;
-  background: #c91e8dff;
-background: linear-gradient(90deg, #c91e8dff 0%, #6d129ff0 100%);
+  background: rgb(71, 53, 65);
+background: linear-gradient(90deg, rgb(105, 85, 98) 0%, #473c4df0 100%);
   padding: 5px;
 }
 .adminnav{
