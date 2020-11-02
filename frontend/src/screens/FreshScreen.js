@@ -33,7 +33,7 @@ function FreshScreen() {
     </section>
     <section>
     <div>
-    <h3 className='text-center'>Our Team</h3>
+    <h3 className='text-center'>Features</h3>
 
     </div>
     </section>

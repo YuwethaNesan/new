@@ -1,6 +1,6 @@
 
 .check{
-    background-color: #fcfcfc ;
+    background-color: #eeeeee ;
     color: #6d129ff0 !important ;
     font-weight: 500 ;
     letter-spacing: normal;
@@ -8,7 +8,8 @@
   }
   .check
   .active{
-    background-color: #6d129ff0;
+    background: #c91e8dff;
+    background: linear-gradient(90deg, #c91e8dff 0%, #6d129ff0 100%);
     color:  #ffffff !important;
     font-weight: 500 ;
     letter-spacing: normal ;

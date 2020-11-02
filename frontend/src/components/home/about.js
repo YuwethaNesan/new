@@ -13,7 +13,7 @@ function About() {
     <section id="about-us" className="responsive about-us">
     <div className="container" data-aos="fade-up">
       <div className="row content fo">
-        <div className="col-lg-6" data-aos="fade-right">
+        <div className="col-lg-6" >
           <h2>Who We Are</h2>
           <h5>Match Our Designs With Your Desires</h5>
         </div>
@@ -27,11 +27,7 @@ function About() {
             <li><i className="ri-check-double-line"></i> Door step meterial collecting and delivery</li>
           </ul>
           <p>
-          A brand exists in the minds of consumers. 
-          That’s it. Nowhere else. No matter how clever your brand messaging is, 
-          it can’t alter the brand. It can only raise awareness or reinforce existing perceptions. 
-          If consumers know a brand promise is empty, 
-          they’ll just scoff at the disconnect between the message and the actual customer experience.
+         You can get full customizable designs and complete embroidery work with order tracking.You can contact our customer service at anytime for clarifications.
           </p>
         </div>
       </div>

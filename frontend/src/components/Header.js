@@ -79,20 +79,21 @@ function Header() {
       )}
        {userInfo && userInfo.isAdmin && (
                   <>
-                    <NavDropdown className='sidenav' title={`Admin`} id="adminmenu">
+                  <h1 className='admin text-center'>Admin</h1>
+                  <Nav className='adminnav'>
                       <LinkContainer to="/admin/userlist">
-                        <NavDropdown.Item>Users</NavDropdown.Item>
+                        <Nav.Item className='btn-primary'>Users</Nav.Item>
                       </LinkContainer>
                       <LinkContainer to="/admin/productlist">
-                        <NavDropdown.Item>Products</NavDropdown.Item>
+                        <Nav.Item className='btn-primary'>Products</Nav.Item>
                       </LinkContainer>
                       <LinkContainer to="/admin/orderlist">
-                        <NavDropdown.Item>Orders</NavDropdown.Item>
+                        <Nav.Item className='btn-primary'>Orders</Nav.Item>
                       </LinkContainer>
-                      <NavDropdown.Item onClick={logoutHandler}>
+                      <Nav.Item className='btn-primary' onClick={logoutHandler}>
                         Logout
-                      </NavDropdown.Item>
-                    </NavDropdown>
+                      </Nav.Item>
+                      </Nav>
                   </>
                 )}
                   {!userInfo && (

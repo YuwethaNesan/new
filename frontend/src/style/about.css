@@ -1,12 +1,12 @@
 .about-us{
     margin-top: -100px !important;
-    color: #636363;
+    color: #636363 !important;
     background-color: transparent !important;
   }
   .about-us
-  h3{
+  h5{
     /* margin-top: 10px ; */
-    color:  #636363 ;
+    color:  #636363 !important;
     text-decoration: none ;
     
   }
@@ -15,7 +15,7 @@
   }
   .about-us
   h2{
-    color:  #636363 ;
+    color:  #636363 !important;
     text-decoration: none ;
   }
  

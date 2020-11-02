@@ -1,19 +1,12 @@
 .paymentimg{
-    max-width: 300px!important;
-    min-width: 300px !important;
-    margin-left: 70px !important;
+    max-width: 500px!important;
+    min-width: 500px !important;
 }
-.pay{
-    margin: -60px !important;
-}
+
 .paystep{
     background-color: #fffef9 ;
     /* padding: 10px ; */
-    margin-top: 4% !important;
     padding: 0px;
-    margin-bottom: 20% !important;
-    margin-left: 5% !important;
-    margin-right: 5% !important;
   
   }
   .paystep
@@ -22,5 +15,4 @@
   }
   .paycontainer{
       background-color: white !important;
-      padding: 50px;
   }

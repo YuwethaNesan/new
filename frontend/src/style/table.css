@@ -11,19 +11,25 @@
 
   }
   
-  #customers td, #customers th {
-    border: 1px solid rgb(189, 189, 189);
-    padding: 8px;
+  #customers td{
+    border:none !important;
+    padding: 5px;
   }
+
+  #customers tr:nth-child(even){  background-color: #f6e0ff79;}
   
-  #customers tr:nth-child(even){  background-color: #ffffff79;}
-  
-  #customers tr:hover {background-color: rgb(248, 248, 248);}
+  #customers tr:hover {background-color: rgb(255, 249, 253);}
   
   #customers th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color:  #26172b ;
+    background: #6d129ff0 ;
+
     color: #ffffff;
+    border: none !important;
+  }
+  h1{
+    text-align: center !important;
+    color: #6d129ff0 !important;
   }

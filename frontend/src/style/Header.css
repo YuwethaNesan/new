@@ -59,60 +59,22 @@ a:hover{
 }
 
 
-/* sidenav */
+/* adminnav */
+.admin{
+  color: rgb(255, 255, 255) !important;
+  background: #c91e8dff;
+background: linear-gradient(90deg, #c91e8dff 0%, #6d129ff0 100%);
+  padding: 5px;
+}
+.adminnav{
+  margin-top: 40px;
+  margin-left: 295px;
+  margin-right: 150px;
+}
+.adminnav
+.nav-item{
 
+  padding-left: 50px !important;
+  padding-right: 50px !important;
 
-.sidenav {
-    height: 100% !important;
-    width: 160px !important;
-    position: fixed !important;
-    z-index: 1 !important;
-    top: 0 !important;
-    left: 0 !important;
-    background-color:  #26172b!important;
-    padding-top: 20px !important;
-    
-  }
-  
-  .sidenav a {
-    padding: 6px 8px 6px 16px !important;
-    text-decoration: none !important;
-    font-size: 25px !important;
-    color: #818181 !important;
-    display: block !important;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1 !important;
-  }
- .adminbr{
-     color: #ffffff !important;
- }
- .main {
-    margin-left: 160px; /* Same as the width of the sidenav */
-    font-size: 28px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
-  }
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 13px;}
-  }
- /* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    .sidebar a {float: left;}
-    div.content {margin-left: 0;}
-  }
-  
-  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-  @media screen and (max-width: 400px) {
-    .sidebar a {
-      text-align: center;
-      float: none;
-    }
-  }
-  
+}
