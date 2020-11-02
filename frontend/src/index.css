@@ -108,6 +108,7 @@ a:hover{
     border-radius: 5px !important;
     font-size: medium !important;
     padding: 5px !important;
+    cursor: pointer ;
   
   }
   .btn-primary:hover{
@@ -118,6 +119,7 @@ a:hover{
   border-radius: 5px !important;
   font-size: medium !important;
   padding: 5px !important;
+  cursor: pointer ;
   border:1px solid transparent !important;
   }
   .myhead{
