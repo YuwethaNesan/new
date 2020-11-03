@@ -2,13 +2,13 @@ const express = require("express");
 const path = require("path");
 const app = express();
 const dotenv = require("dotenv");
-const connectDb = require("./config/db");
-const productRoutes = require("./routes/productroutes");
-const userRoutes = require("./routes/userroutes");
-const orderPoutes = require("./routes/orderroutes");
-const uploadRoutes = require("./routes/uploadRoutes");
+const connectDb = require("./backend/config/db");
+const productRoutes = require("./backend/routes/productroutes");
+const userRoutes = require("./backend/routes/userroutes");
+const orderPoutes = require("./backend/routes/orderroutes");
+const uploadRoutes = require("./backend/routes/uploadRoutes");
 const morgan = require("morgan");
-const { notFound, errorHandler } = require("./middleware/errorMiddleware");
+const { notFound, errorHandler } = require("./backend/middleware/errorMiddleware");
 
 app.use(express.json());
 
