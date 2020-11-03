@@ -11,9 +11,9 @@ import "../../style/Talk.css"
 function Talk() {
   return (
       <>
-
+<div className='talk'>
 <Row>
-<Col className="col-3">
+<Col md='3'>
 <div className="flip-card">
   <div className="flip-card-inner">
     <div className="flip-card-front">
@@ -28,7 +28,7 @@ function Talk() {
 </div>
   </Col>
 
-  <Col className="col-3">
+  <Col md='3'>
   <div className="flip-card">
   <div className="flip-card-inner">
     <div className="flip-card-front">
@@ -43,7 +43,7 @@ function Talk() {
 </div>
   </Col>
 
-  <Col className="col-3">
+  <Col md='3'>
   <div className="flip-card">
   <div className="flip-card-inner">
     <div className="flip-card-front">
@@ -59,7 +59,7 @@ function Talk() {
 </div>
   </Col>
 
-  <Col className="col-3">
+  <Col md='3'>
   <div className="flip-card">
   <div className="flip-card-inner">
     <div className="flip-card-front">
@@ -75,6 +75,7 @@ function Talk() {
 </div>
   </Col>
 </Row>
+</div>
   </>
   );
 }

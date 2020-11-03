@@ -23,7 +23,7 @@ import { PRODUCT_CREATE_REVIEW_RESET } from "./../constants/productConstants";
 //import {  } from 'react-redux';
 import Meta from "./../components/Meta";
 //match is dest in params.macth.item
-
+import '../style/product.css'
 function ProductScreeen({ history, match }) {
   const [qty, setQty] = useState(1);
   const [rating, setRating] = useState(0);
@@ -80,10 +80,10 @@ function ProductScreeen({ history, match }) {
         <>
           <Meta title={product.name} />
           <Row>
-            <Col md={6}>
-              <Image src={product.image} alt={product.name} fluid />
+            <Col md={5}>
+              <Image className='productimage' src={product.image} alt={product.name} fluid />
             </Col>
-            <Col md={3}>
+            <Col md={4}>
               <ListGroup variant="flush">
                 <ListGroup.Item>
                   <h3>{product.name}</h3>
@@ -150,19 +150,12 @@ function ProductScreeen({ history, match }) {
           </Row>
           <Row>
             <Col md={8}>
-              <h2>Reviews</h2>
+              
               {product.reviews.length === 0 && <Message>No Reviews</Message>}
               <ListGroup variant="flush">
-                {product.reviews.map((review) => (
-                  <ListGroup.Item key={review._id}>
-                    <strong>{review.name}</strong>
-                    <Rating value={review.rating} />
-                    <p>{review.createdAt.substring(0, 10)}</p>
-                    <p>{review.comment}</p>
-                  </ListGroup.Item>
-                ))}
+               
                 <ListGroup.Item>
-                  <h2>Write a Customer Review</h2>
+                  <h3>Write a Customer Review</h3>
                   {errorProductReview && (
                     <Message variant="danger">{errorProductReview}</Message>
                   )}
@@ -201,7 +194,16 @@ function ProductScreeen({ history, match }) {
                       Please <Link to="/login">sign in</Link> to write a review{" "}
                     </Message>
                   )}
+                  <h3>Reviews</h3>
                 </ListGroup.Item>
+                {product.reviews.map((review) => (
+                  <ListGroup.Item key={review._id}>
+                    <strong>{review.name}</strong>
+                    <Rating value={review.rating} />
+                    <p>{review.createdAt.substring(0, 10)}</p>
+                    <p>{review.comment}</p>
+                  </ListGroup.Item>
+                ))}
               </ListGroup>
             </Col>
           </Row>

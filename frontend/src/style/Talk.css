@@ -10,6 +10,7 @@ body{
     max-height: 200px !important;
     min-height: 200px !important;
     perspective: 1000px; 
+    
   }
   
   /* This container is needed to position the front and back side */
@@ -42,7 +43,7 @@ body{
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    background-color: #bbb;
+    background-color: rgb(255, 255, 255) !important;
     max-width: 200px !important;
     min-width: 200px !important;
     max-height: 200px !important;
@@ -68,4 +69,15 @@ body{
     min-height: 200px !important;
     margin-left: 0px !important;
   
+  }
+  .talk{
+    background-color: rgb(250, 239, 255) !important;
+    margin-left: -120px !important;
+    margin-right: -120px !important;
+    padding-left: 140px;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+
   }

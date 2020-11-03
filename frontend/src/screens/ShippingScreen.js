@@ -36,9 +36,9 @@ function ShippingScreen({ history }) {
 <div className='address myform'>
       <Row className='addalert'>
       <Col className='col-6'>
-      <Alert className='alertadd' variant="success">
+      <Alert className='alertadd'>
   <Alert.Heading>Hey!, Nice to see you</Alert.Heading>
-  <p>We have a good news.We will come & collect your material at your place.</p>
+  <p>We have a good news.We will come to collect your material & advance payment 50% of total at your place.</p>
   
   <p>
     Please provide your address for material collecting.

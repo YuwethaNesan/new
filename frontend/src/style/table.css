@@ -16,9 +16,9 @@
     padding: 5px;
   }
 
-  #customers tr:nth-child(even){  background-color: #f6e0ff79;}
+  #customers tr:nth-child(even){  background-color: #ffffff;}
   
-  #customers tr:hover {background-color: rgb(255, 249, 253);}
+  #customers tr:hover {background-color: rgb(255, 255, 255);}
   
   #customers th {
     padding-top: 12px;
@@ -33,3 +33,4 @@
     text-align: center !important;
     color: #6d129ff0 !important;
   }
+  

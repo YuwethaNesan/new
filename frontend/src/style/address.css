@@ -6,3 +6,10 @@
 .add{
     margin: 0px !important;
 }
+.alertadd{
+    background-color: rgb(249, 242, 255);
+    color: #6d129ff0 ;
+    border-color: transparent !important;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ffa0fa;
+}

@@ -1,3 +1,11 @@
 .carousel{
     margin-left: -500px;
 }
+
+.carousel .thumbs {
+    display: none !important;
+}
+.thumbs{
+    display: none !important;
+
+}
