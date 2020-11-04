@@ -51,63 +51,25 @@ import img3 from '../images/productcarousel3.png'
  function ProductCarousel() {
    return (
      
-       <Carousel>
+      <Carousel>
                
                 
                     <img alt='carousal' src={img2} />
-                
-                
                     <img alt='carousal' src={img3} />
-                
-                
-                    
-                
-                
                     <img alt='carousal' src={img2} />
-                
-                
                     <img alt='carousal' src={img3} />
-                
-                
-          
                     <img alt='carousal' src={img3} />
-                
-                
-                    
                     <img alt='carousal' src={img2} />
-                
-                
-                <img alt='carousal' src={img3} />
-            
-            
-                
-            
-            
-                <img alt='carousal' src={img2} />
-            
-            
-                <img alt='carousal' src={img3} />
-            
-            
-      
-                <img alt='carousal' src={img3} />
-            
-            
-                
-            
-            
-                <img alt='carousal' src={img2} />
-            
-            
-                <img alt='carousal' src={img3} />
-            
-                
+                    <img alt='carousal' src={img3} />
                     <img alt='carousal' src={img2} />
-                
-                
+                    <img alt='carousal' src={img3} />
+                    <img alt='carousal' src={img3} />
+                    <img alt='carousal' src={img2} />
+                    <img alt='carousal' src={img3} />
+                    <img alt='carousal' src={img2} />
                     <img alt='carousal' src={img3} />
                 
-            </Carousel>
+      </Carousel>
      
    )
  }
