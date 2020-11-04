@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2a55b814.chunk.css",
+    "main.js": "/static/js/main.dca05927.chunk.js",
+    "main.js.map": "/static/js/main.dca05927.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c8a21426.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c8a21426.js.map",
+    "static/css/2.fb346933.chunk.css": "/static/css/2.fb346933.chunk.css",
+    "static/js/2.cdc9c51d.chunk.js": "/static/js/2.cdc9c51d.chunk.js",
+    "static/js/2.cdc9c51d.chunk.js.map": "/static/js/2.cdc9c51d.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.60ae815511e84d25b065ba06cdbb46df.js": "/precache-manifest.60ae815511e84d25b065ba06cdbb46df.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.fb346933.chunk.css.map": "/static/css/2.fb346933.chunk.css.map",
+    "static/css/main.2a55b814.chunk.css.map": "/static/css/main.2a55b814.chunk.css.map",
+    "static/js/2.cdc9c51d.chunk.js.LICENSE.txt": "/static/js/2.cdc9c51d.chunk.js.LICENSE.txt",
+    "static/media/Mobile-login-01.png": "/static/media/Mobile-login-01.da35eb97.png",
+    "static/media/address.png": "/static/media/address.b29b6567.png",
+    "static/media/ceo1.png": "/static/media/ceo1.82d8758c.png",
+    "static/media/ceo2.png": "/static/media/ceo2.93dec20e.png",
+    "static/media/ceo3.png": "/static/media/ceo3.9424400c.png",
+    "static/media/ceo4.png": "/static/media/ceo4.a58d7b3c.png",
+    "static/media/form.css": "/static/media/cover.164918eb.jpg",
+    "static/media/FreshScreen.css": "/static/media/coverpro.e66bedff.png",
+    "static/media/features.png": "/static/media/features.883a52a7.png",
+    "static/media/features1.png": "/static/media/features1.e5cc4d51.png",
+    "static/media/features2.png": "/static/media/features2.dade3772.png",
+    "static/media/logo.png": "/static/media/logo.4bc66627.png",
+    "static/media/payment.png": "/static/media/payment.dd21187c.png",
+    "static/media/productcarousel1.png": "/static/media/productcarousel1.436bc7cb.png",
+    "static/media/productcarousel2.png": "/static/media/productcarousel2.40e837cf.png",
+    "static/media/productcarousel3.png": "/static/media/productcarousel3.9a38e767.png",
+    "static/media/workflow.png": "/static/media/workflow.94bc9b01.png",
+    "static/media/yuthies logo.png": "/static/media/yuthies logo.6c406d12.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c8a21426.js",
+    "static/css/2.fb346933.chunk.css",
+    "static/js/2.cdc9c51d.chunk.js",
+    "static/css/main.2a55b814.chunk.css",
+    "static/js/main.dca05927.chunk.js"
+  ]
+}
