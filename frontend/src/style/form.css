@@ -5,7 +5,7 @@
 
   /* ===================form======================== */
   .myform{
-    background-color: rgb(255, 255, 255) !important;
+    background-color: rgb(226, 226, 226) !important;
     /* -webkit-box-shadow: 0px 0px 8px 1px rgba(107,107,107,1);
   -moz-box-shadow: 0px 0px 8px 1px rgba(107,107,107,1);
   box-shadow: 0px 0px 8px 1px rgba(107,107,107,1); */
@@ -24,7 +24,7 @@
 
 }
 .myformedit{
-  background-color: rgb(255, 255, 255) !important;
+  background-color: rgb(238, 238, 238) !important;
   /* -webkit-box-shadow: 0px 0px 7px 1px rgba(163,163,163,1);
   -moz-box-shadow: 0px 0px 7px 1px rgba(163,163,163,1);
   box-shadow: 0px 0px 7px 1px rgba(163,163,163,1); */

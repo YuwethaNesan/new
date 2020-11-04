@@ -5,6 +5,7 @@ import About from '../components/home/about';
 import Talk from '../components/home/talk';
 import Work from '../components/home/work';
 import Features from '../components/home/feature';
+// import TopProduct from '../components/topproduct';
 
 
 function FreshScreen() {
@@ -32,6 +33,9 @@ function FreshScreen() {
 
     </div>
     </section>
+    <div>
+        {/* <TopProduct/> */}
+    </div>
     <section>
     <div>
     <h3 className='text-center'>Features</h3>

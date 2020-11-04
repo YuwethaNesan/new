@@ -54,58 +54,58 @@ import img3 from '../images/productcarousel3.png'
        <Carousel>
                
                 
-                    <img src={img2} />
+                    <img alt='carousal' src={img2} />
                 
                 
-                    <img src={img3} />
+                    <img alt='carousal' src={img3} />
                 
                 
                     
                 
                 
-                    <img src={img2} />
+                    <img alt='carousal' src={img2} />
                 
                 
-                    <img src={img3} />
+                    <img alt='carousal' src={img3} />
                 
                 
           
-                    <img src={img3} />
+                    <img alt='carousal' src={img3} />
                 
                 
                     
-                    <img src={img2} />
+                    <img alt='carousal' src={img2} />
                 
                 
-                <img src={img3} />
+                <img alt='carousal' src={img3} />
             
             
                 
             
             
-                <img src={img2} />
+                <img alt='carousal' src={img2} />
             
             
-                <img src={img3} />
+                <img alt='carousal' src={img3} />
             
             
       
-                <img src={img3} />
+                <img alt='carousal' src={img3} />
             
             
                 
             
             
-                <img src={img2} />
+                <img alt='carousal' src={img2} />
             
             
-                <img src={img3} />
+                <img alt='carousal' src={img3} />
             
                 
-                    <img src={img2} />
+                    <img alt='carousal' src={img2} />
                 
                 
-                    <img src={img3} />
+                    <img alt='carousal' src={img3} />
                 
             </Carousel>
      

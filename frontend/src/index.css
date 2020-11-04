@@ -5,7 +5,12 @@
 
   border-color: rgb(184, 184, 184) !important;
 }
-
+img {
+	-webkit-touch-callout: none !important;
+  -webkit-user-select: none !important;
+  
+    pointer-events: none;
+}
 body{
 margin: 0% !important;
 background-color: rgb(255, 255, 255) !important;
